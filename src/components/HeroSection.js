@@ -6,7 +6,7 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <h1>ADVENTURE AWAITS</h1>
+      <h1>Drink Healthy, Be Healthy</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
         <Button
@@ -14,15 +14,15 @@ function HeroSection() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          GET STARTED
+          Order Now
         </Button>
         <Button
           className='btns'
-          buttonStyle='btn--primary'
+          buttonStyle='btn--outline'
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
-          WATCH TRAILER <i className='far fa-play-circle' />
+          View More
         </Button>
       </div>
     </div>
