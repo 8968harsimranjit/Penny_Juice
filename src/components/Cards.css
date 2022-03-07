@@ -86,10 +86,15 @@
   
   .cards__item__text {
     color: #084c55;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
   }
-  
+  .cards_item_para{
+    color:#084c55;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 5px;;
+  }
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
       width: 84%;
