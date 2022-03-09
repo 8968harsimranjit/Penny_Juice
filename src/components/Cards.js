@@ -41,7 +41,7 @@ function Cards() {
               path='/contact'
             />
           </ul>
-          <h1 className="heading_2">Welcome to Our Shop!</h1>
+          <h1 className="heading_2">Visit Our Shop!</h1>
           <ul className='cards__items'>
           <CardItem
               src = "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2011/07/14/Food/Images/food019_1310646961.jpg?t=20170517"
@@ -51,6 +51,16 @@ function Cards() {
             <CardItem
               src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVCph1Dgtut3zNNuv9cs2m_KHALVUFLqllQ&usqp=CAU"
               text='Fresh Orange'
+              path='/products'
+            />
+            <CardItem
+              src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdaSWJpIVlL7NbPUX9MkFRpDV_Ch34YRL1m6QuaS2t5wKYMtVc-49gA1OG8MSp8qDU8OE&usqp=CAU"
+              text='Peach Mango'
+              path='/products'
+            />
+            <CardItem
+              src = "https://www.mysequinedlife.com/wp-content/uploads/2014/11/cranberry-apple-margarita-2.jpg"
+              text='Cran-Apple'
               path='/products'
             />
             <CardItem
@@ -66,6 +76,16 @@ function Cards() {
           </ul>
           <ul className='cards__items'>
           <CardItem
+              src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdaSWJpIVlL7NbPUX9MkFRpDV_Ch34YRL1m6QuaS2t5wKYMtVc-49gA1OG8MSp8qDU8OE&usqp=CAU"
+              text='Peach Mango'
+              path='/products'
+            />
+            <CardItem
+              src = "https://www.mysequinedlife.com/wp-content/uploads/2014/11/cranberry-apple-margarita-2.jpg"
+              text='Cran-Apple'
+              path='/products'
+            />
+            <CardItem
               src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdaSWJpIVlL7NbPUX9MkFRpDV_Ch34YRL1m6QuaS2t5wKYMtVc-49gA1OG8MSp8qDU8OE&usqp=CAU"
               text='Peach Mango'
               path='/products'
