@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import '../../App.css';
 import './Contact.css';
-import { Button } from '../Button';
 import { db } from "../firebase";
 
 function Contact() {
@@ -16,7 +14,7 @@ const [loader, setLoader] = useState(false);
     e.preventDefault();
     setLoader(true);
 
-    db.collection("contacts")
+    db.collection("messages")
       .add({
         name: name,
         email: email,
@@ -37,20 +35,21 @@ const [loader, setLoader] = useState(false);
   };
 
   return (
-    <div className='contacts'>
+    <div className='contacts' onSubmit={handleSubmit}>
         <div className ="info">
         <h2>We'd Love to Hear From you.</h2>
         <p>We're a family-owned business that was founded in 2001.
-         We have over 40 years of experience in the beverage industry.</p>
-         <ul>Each case contains six half-gallon bottles of different flavors.
-             Here are some of the things you should know before ordering from us.
-             <li>We do not do contracrs</li>
+         We have over 40 years of experience in the beverage industry.
+         Each case contains six half-gallon bottles of different flavors.
+        Here are some of the things you should know before ordering from us.</p>
+             <ul>
+             <li>We do not do contracts</li>
              <li>We do free delivery nationwide</li>
              <li>Our minium order consist of One case</li>
          </ul>
         </div>
         <div className='contact__form'>
-            <h2>Contact Us</h2>
+            <h3>Contact Us</h3>
 
             <label>Name</label>
             <input 
@@ -61,26 +60,21 @@ const [loader, setLoader] = useState(false);
             <label>Email</label>
             <input placeholder='Email' 
             value={email}
-            onChange={(e) => setName(e.target.value)}/>
+            onChange={(e) => setEmail(e.target.value)}/>
 
             <label>Message</label>
             <textarea 
             placeholder='Message'
             value={message}
-            onChange={(e) => setName(e.target.value)}></textarea>
-        <div className='conatct__btn'>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-          style={{ background: loader ? "#E7BB41" : " rgb(2, 2, 110)" }}  /*inline style for loader. When the user submit the form the button will turn grey. */
+            onChange={(e) => setMessage(e.target.value)}></textarea>
+        <div className='contact__btn'>
+        <button type="submit" onClick={handleSubmit}
+          /*style={{ background: loader ? " rgb(2, 2, 110)" : "#E7BB41" }}  inline style for loader. When the user submit the form the button will turn grey. */
         >
           Submit
-        </Button>
+        </button>
         </div>
-        </div>
-        
-        
+        </div>     
     </div>
   )
 }

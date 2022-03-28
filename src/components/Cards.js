@@ -63,7 +63,11 @@ function Cards() {
               text='Cran-Apple'
               path='/products'
             />
-            <CardItem
+            
+          </ul>
+          <ul className='cards__items'>
+          
+          <CardItem
               src = "https://food.unl.edu/recipes/strawberry-banana-smoothie.jpg"
               text='Strawberry Banana'
               path='/products'
@@ -71,28 +75,6 @@ function Cards() {
             <CardItem
               src = "https://kitchenconfidante.com/wp-content/uploads/2015/01/Soothing-Hot-Apple-Berry-Ginger-Juice-www.kitchenconfidante.com-6821-500x500.jpg"
               text='Berry'
-              path='/products'
-            />
-          </ul>
-          <ul className='cards__items'>
-          <CardItem
-              src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdaSWJpIVlL7NbPUX9MkFRpDV_Ch34YRL1m6QuaS2t5wKYMtVc-49gA1OG8MSp8qDU8OE&usqp=CAU"
-              text='Peach Mango'
-              path='/products'
-            />
-            <CardItem
-              src = "https://www.mysequinedlife.com/wp-content/uploads/2014/11/cranberry-apple-margarita-2.jpg"
-              text='Cran-Apple'
-              path='/products'
-            />
-            <CardItem
-              src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdaSWJpIVlL7NbPUX9MkFRpDV_Ch34YRL1m6QuaS2t5wKYMtVc-49gA1OG8MSp8qDU8OE&usqp=CAU"
-              text='Peach Mango'
-              path='/products'
-            />
-            <CardItem
-              src = "https://www.mysequinedlife.com/wp-content/uploads/2014/11/cranberry-apple-margarita-2.jpg"
-              text='Cran-Apple'
               path='/products'
             />
             <CardItem

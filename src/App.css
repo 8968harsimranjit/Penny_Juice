@@ -15,10 +15,11 @@
 }
 
 .sign-up {
-  background-image: url('/public/images/500_F_289027217_oY8y5wusY2RY78Jbe1794iLoEVgVbAWF.jpg');
+  background-image: url('https://image.shutterstock.com/z/stock-vector-vector-fruits-pattern-fruits-seamless-background-274173620.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(8, 99, 71, 0.418);
   color: #fff;
   font-size: 100px;
 }

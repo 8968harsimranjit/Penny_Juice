@@ -22,7 +22,7 @@ export const Button = ({
     : SIZES[0]
 
     return(
-        <Link to='/sign-up' className='btn-mobile'>
+        <Link to='/contacts' className='btn-mobile'>
             <button
             className={`btn ${checkButtonStyle} ${checkButtonSize}`}
             type={type}

@@ -5,7 +5,9 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Contact from './components/pages/Contact';
 import Home from './components/pages/Home';
-import Products from './components/pages/Products';
+import Carousel from './components/pages/ProductItem';
+import {Products} from './components/pages/Products'
+
 import SignUp from './components/pages/SignUp';
 
 function App() {
@@ -15,7 +17,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/products' element={<Products />}/>
+        <Route path='/products' element={<Carousel slides={Products} />}/>
         <Route path='/contacts' element={<Contact />}/>
         <Route path='/sign-up' element={<SignUp />}/>
       </Routes>

@@ -1,62 +1,101 @@
 .contacts{
-  height: 90vh; 
-  background-image: url('/public/images/tekstura-fon-fruty-leto-summer-fruits-pattern-arbuz-ananas.jpg');
-    background-position: center;
-    box-shadow: inset 0 0 0 1000px rgba(10, 104, 72, 0.39);
-    display: flex;
-    flex-direction: row;
-}
-.contact__form{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.842);
-    height: 70%;
-    border: 2px solid #084c55;
-    border-radius: 2rem;
-    color:#084c55;
-    padding: 1rem 5rem;
-    margin:6rem 0;
-    height: 80%;
+  height: 100%;     
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:3rem;
+  color:#084c55;
+  background-image: url('https://media.istockphoto.com/videos/blue-sky-full-of-clouds-moving-right-to-left-cartoon-sky-animated-video-id1215291953?b=1&k=20&m=1215291953&s=640x640&h=EJ1SqutO8v3QcubwOwJScv2nkcoJGEBQAeCYBry6IPE=');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px #51b9c783;
 }
 .info{
-    padding: 2rem;
-    margin:6rem;
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.842);
-    height: 70%;
-    border: 2px solid #084c55;
-    border-radius: 2rem;
-    color:#084c55;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 h2{
-  font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
 }
 p{
-    padding-top: 1rem;
-    font-size: 1.7rem;
+    line-height: 35px;
+    font-size: 1.4rem;
+}
+ul{
+    font-size: 1.4rem;
+    line-height: 35px;
+}
+.info > ul > li{
+    list-style: none;
+    background-color: #084c55;
+    color: #fff;
+    margin: 1rem;
+    line-height: 20px;
+    border-radius: 10px;
+}
+
+/* contact-form*/
+.contact__form{
+    display:flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width:80%;
+    padding: 2rem;
+    border: 2px double #084c55;
+}
+h3{
+    text-align: center;
+    font-size: 2rem;
 }
 label{
-    font-size: 1.5rem;
+    padding:10px 0;
 }
-ul,li{
+input{
+ padding: 5px 0;
+}
+.contact__btn{
+    margin-top: 1.3rem;
+}
+.contact__btn > button{
+    background-color: #E7BB41;
+    color:#084c55;
+    padding: 0.8rem 1.4rem;
     font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
-input,
-textarea {
-  padding: 10px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  border: 1px solid lightgray;
-  background: #fff;
-
-  color: rgb(0, 0, 32);
-  outline: none;
+.contact__btn > button:hover{
+    background-color: #084c55;
+    color:#fff;
+    transition: transform .7s ease-in;
 }
-
-textarea {
-    height: 150px;
-    max-width: 400px;
-    min-height: 100px;
+@media screen and (min-width: 960px){
+    .info{
+        margin: 0 7rem;
+    }
+    p{
+        margin: 0 1rem;
+    }
+    ul{
+      display: flex;
+    }
+    .info > ul > li{
+       padding: 1rem 2.5rem;
+    }
+    .contact__form{
+        width:40%;
+    }
+    label{
+        padding:0.8rem 0;
+        text-align: center;
+    }
+    .contact__btn{
+        text-align: center;
+    }
 }
 
 
